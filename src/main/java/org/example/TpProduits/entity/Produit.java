@@ -10,4 +10,13 @@ public abstract class Produit {
         this.composant = builder.composant;
         this.couleur = builder.couleur;
     }
+
+    @Override
+    public String toString() {
+        return "Produit{" +
+                "nom='" + nom + '\'' +
+                ", composant='" + composant + '\'' +
+                ", couleur='" + couleur + '\'' +
+                '}';
+    }
 }

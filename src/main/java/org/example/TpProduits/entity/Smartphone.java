@@ -23,7 +23,7 @@ public class Smartphone extends Produit{
             return this;
         }
         @Override
-        public Produit build() {
+        public Smartphone build() {
             return new Smartphone(this);
         }
     }

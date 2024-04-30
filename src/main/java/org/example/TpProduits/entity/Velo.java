@@ -17,7 +17,7 @@ public class Velo extends Produit{
         }
 
         @Override
-        public Produit build() {
+        public Velo build() {
             return new Velo(this);
         }
     }

@@ -21,10 +21,19 @@ public class Ordinateur extends Produit {
             this.memoire = memoire;
             return this;
         }
+        @Override
+        public String toString() {
+            return "OrdinateurBuilder{" +
+                    "processeur='" + processeur + '\'' +
+                    ", memoire=" + memoire +
+                    '}';
+        }
 
          @Override
-        public Produit build() {
+        public Ordinateur build() {
             return new Ordinateur(this);
          }
+
+
     }
 }
