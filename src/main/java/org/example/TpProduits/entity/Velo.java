@@ -7,6 +7,15 @@ public class Velo extends Produit{
         super(builder);
         this.typeRoue = builder.typeRoue;
     }
+    @Override
+    public String toString() {
+        return "Velo{" +
+                "nom='" + nom + '\'' +
+                ", composant='" + composant + '\'' +
+                ", couleur='" + couleur + '\'' +
+                ", typeRoue='" + typeRoue + '\'' +
+                '}';
+    }
 
     public static class VeloBuilder extends AbstractProduit{
         private String typeRoue;
