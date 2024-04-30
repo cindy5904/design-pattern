@@ -9,6 +9,18 @@ public class Ordinateur extends Produit {
         this.processeur = builder.processeur;
         this.memoire = builder.memoire;
     }
+
+    @Override
+    public String toString() {
+        return "Ordinateur{" +
+                "nom='" + nom + '\'' +
+                ", composant='" + composant + '\'' +
+                ", couleur='" + couleur + '\'' +
+                ", processeur='" + processeur + '\'' +
+                ", memoire=" + memoire +
+                '}';
+    }
+
     public static class OrdinateurBuilder extends AbstractProduit{
         private String processeur;
         private int memoire;
@@ -17,16 +29,10 @@ public class Ordinateur extends Produit {
             this.processeur = processeur;
             return this;
         }
+
         public OrdinateurBuilder memoire(int memoire){
             this.memoire = memoire;
             return this;
-        }
-        @Override
-        public String toString() {
-            return "OrdinateurBuilder{" +
-                    "processeur='" + processeur + '\'' +
-                    ", memoire=" + memoire +
-                    '}';
         }
 
          @Override

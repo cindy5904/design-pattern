@@ -10,6 +10,17 @@ public class Smartphone extends Produit{
         this.processeur = builder.processeur;
     }
 
+    @Override
+    public String toString() {
+        return "Smartphone{" +
+                "nom='" + nom + '\'' +
+                ", composant='" + composant + '\'' +
+                ", couleur='" + couleur + '\'' +
+                ", processeur='" + processeur + '\'' +
+                ", memoire=" + memoire +
+                '}';
+    }
+
     public static class SmartphoneBuilder extends AbstractProduit{
         private String processeur;
         private int memoire;
