@@ -6,7 +6,7 @@ public class RoadStrategy implements NavigationStrategie{
     private Random random = new Random();
     @Override
     public boolean navigate(String destination) {
-        System.out.println("Destination"+ destination);
+//        System.out.println("Destination"+ destination);
         return random.nextBoolean();
     }
 }
