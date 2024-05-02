@@ -27,9 +27,10 @@ public class Main {
                 .typeRoue("Deux roues")
                 .build();
 
-        System.out.println(ordinateur.toString());
-        System.out.println(smartphone.toString());
-        System.out.println(velo.toString());
+        System.out.println(ordinateur);
+        System.out.println(smartphone);
+        System.out.println(velo);
+
 
     }
 }
