@@ -7,7 +7,7 @@ public class TVAStrategy implements TaskStrategy{
         double tauxTVA;
         if (income < 10000) {
             tauxTVA = 5;
-        } else if (income < 30000) {
+        } else if (income < 20000) {
             tauxTVA = 10;
         } else {
             tauxTVA = 15;
