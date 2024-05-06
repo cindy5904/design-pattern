@@ -11,6 +11,7 @@ public class PaymentAdapter implements OldPaymentGateway{
 
     @Override
     public void makePayment(String accountNumber, double amount) {
-        newPaymentProcassor.authenticate("Lorem");
+        newPaymentProcassor.authenticate(accountNumber);
+        newPaymentProcassor.sendPayment(amount);
     }
 }
